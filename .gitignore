@@ -1,0 +1,34 @@
+# ============================================
+# GITIGNORE
+# ============================================
+
+# Variables de entorno con claves sensibles
+.env
+.env.local
+.env.production
+
+# Config antigua (por si acaso)
+config/config.local.php
+
+# Dependencias de Composer
+/vendor/
+
+# Archivos de log
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Respaldos de BD
+respaldos/
+backups/
+
+# Configuración del IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Composer phar (si quieres versionarlo, quita esta línea)
+# composer.phar

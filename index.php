@@ -1,0 +1,13 @@
+<?php
+// Redirigir al login o dashboard
+
+session_start();
+
+if (isset($_SESSION['user_id'])) {
+    header('Location: views/dashboard.php');
+} else {
+    header('Location: views/login.php');
+}
+exit;
+
+?>
